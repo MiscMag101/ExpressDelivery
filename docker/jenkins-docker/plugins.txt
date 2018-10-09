@@ -1,0 +1,13 @@
+log-parser
+build-pipeline-plugin
+workflow-api
+workflow-aggregator
+workflow-basic-steps
+workflow-job
+workflow-multibranch
+workflow-scm-step
+workflow-step-api
+workflow-support
+zap
+git
+sonar

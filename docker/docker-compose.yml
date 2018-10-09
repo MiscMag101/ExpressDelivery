@@ -1,0 +1,23 @@
+version: '3'
+services:
+  jenkins:
+    environment:
+      - CLIENT_ID=${CLIENT_ID}
+      - CLIENT_SECRET=${CLIENT_SECRET}
+      - HOST=${HOST}
+      - PORT=${PORT}
+      - MONGO=${MONGO}
+    build: ./jenkins-docker
+    image: jenkins-secu:latest
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+  sonar:
+    build: ./sonar-docker
+    image: sonar-secu:latest
+    ports:
+      - "9000:9000"
+  mongo:
+    image: mongo:3.2
+    ports:
+      - "27017:27017"
