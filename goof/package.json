@@ -43,7 +43,7 @@
     "stream-buffers": "^3.0.1",
     "tap": "^5.7.0",
     "adm-zip": "0.4.7",
-    "file-type": "^8.1.0"
+    "file-type": "^16.5.4"
   },
   "devDependencies": {
     "browserify": "^13.1.1",
